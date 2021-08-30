@@ -1,0 +1,41 @@
+﻿@model flo.desarrollo.prueba.entidades.Fabricante.Fabricante
+
+@{
+    ViewData["Title"] = "Detalle Fabricante";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">CRUD Fabricantee</h1>
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="float-left">
+            <a asp-action="Index" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Volver </a>
+        </div>
+    </div>
+</div>
+
+
+<hr />
+<div class="row">
+    <div class="card col-12">
+        <div class="card-header">
+            <h3>
+                <strong> Detalle Fabricante </strong>
+            </h3>
+        </div>
+
+        <div class="card-body">
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong> Codigo: </strong> @Html.DisplayFor(m => m.Codigo)
+                </li>
+                <li class="list-group-item">
+                    <strong> Nombre: </strong> @Html.DisplayFor(m => m.Nombre)
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
